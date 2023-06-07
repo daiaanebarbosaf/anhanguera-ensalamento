@@ -45,6 +45,10 @@ body{
     background-color: var(--bg-light);
 }
 
+a {
+    text-decoration: none;
+}
+
 .wrapper{
     width: min(50rem, 100%);
     margin-inline: auto;
