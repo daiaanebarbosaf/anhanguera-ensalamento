@@ -50,7 +50,6 @@ function showNavOnScroll() {
     }
 }
  
-
 function showBackToTopButtonOnScroll() {
     if(scrollY > 400) {
         backToTopButton.classList.add('show')
@@ -93,4 +92,15 @@ ScrollReveal({
     #contact,
     #contact header,
     #contact .content,
-    #contact .col-b`)
+    #contact .col-b`);
+
+function leiaMais(){
+    var pontos = document.getElementById("pontos");
+    var maisTexto = document.getElementById("plus");
+    var btnLeiaMais =  document.getElementById("btnLeiaMais");
+
+    if(pontos.style.display === "none"){
+        pontos.style.display = "inline";
+        maisTexto.style.display = "none";
+    }
+}
