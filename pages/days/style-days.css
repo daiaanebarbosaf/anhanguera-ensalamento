@@ -396,6 +396,19 @@ body.menu-expanded button path {
 
 /*============CONGIGURAÇÕES DO SERVICES============*/
 
+.hide {
+    display: none;
+}
+
+button #btnReadMore {
+    background: transparent;
+}
+
+#services  button svg {
+    width: 2rem;
+    background: none;
+}
+
 #services {
     margin-top: 5rem;
 }
