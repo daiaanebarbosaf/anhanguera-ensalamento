@@ -2,6 +2,12 @@ window.addEventListener('scroll', onScroll)
 
 const navigation = document.getElementById('navigation')
 
+var pontos = document.getElementById("pontos");
+var maisTexto = document.getElementById("plus");
+
+const downArrow = document.querySelector('.downArrow'); 
+const upArrow = document.querySelector('.upArrow');
+
 onScroll()
 
 function onScroll() {
@@ -95,22 +101,24 @@ ScrollReveal({
     #contact .col-b`);
 
 function leiaMais(){
-    var pontos = document.getElementById("pontos");
-    var maisTexto = document.getElementById("plus");
 
-    let downArrow = document.getElementById("downArrow"); 
-    let upArrow = document.getElementById("upArrow");
 
     if(pontos.style.display === "none"){
-        downArrow.style.display = "inline";
+        downArrow.classList.add('hide');
         maisTexto.style.display = "none";
-        upArrow.style.display = "none";
-        
+        upArrow.classList.remove('hide');
+             
     } else {
-        downArrow.style.display = "none";
         maisTexto.style.display = "inline";
-        upArrow.style.display = "inline";
+        upArrow.classList.remove('hide');
+        downArrow.classList.add('hide');
     }
 
 
+}
+
+function leiaMenos(){
+    downArrow.classList.remove('hide');
+    maisTexto.style.display = "none";
+    upArrow.classList.add('hide');
 }
