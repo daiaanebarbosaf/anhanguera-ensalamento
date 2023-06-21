@@ -400,13 +400,14 @@ body.menu-expanded button path {
     display: none;
 }
 
-button #btnReadMore {
+#services button {
     background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-#services  button svg {
-    width: 2rem;
-    background: none;
+#services button svg {
+    width: 2rem;    
 }
 
 #services {
