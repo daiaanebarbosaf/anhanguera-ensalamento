@@ -2,8 +2,8 @@ window.addEventListener('scroll', onScroll)
 
 const navigation = document.getElementById('navigation')
 
-var pontos = document.getElementById("pontos");
-var maisTexto = document.getElementById("plus");
+var points = document.getElementById("points");
+var textMore = document.getElementById("textMore");
 
 const downArrow = document.querySelector('.downArrow'); 
 const upArrow = document.querySelector('.upArrow');
@@ -72,10 +72,6 @@ function closeMenu() {
     document.body.classList.remove('menu-expanded')
 }
 
-function plusRead() {
-    
-}
-
 ScrollReveal({
     origin: 'top',
     distance: '30px',
@@ -100,25 +96,23 @@ ScrollReveal({
     #contact .content,
     #contact .col-b`);
 
-function leiaMais(){
+function readMore(){
 
-
-    if(pontos.style.display === "none"){
+    if(points.style.display === "none"){
         downArrow.classList.add('hide');
-        maisTexto.style.display = "none";
+        textMore.style.display = "none";
         upArrow.classList.remove('hide');
              
     } else {
-        maisTexto.style.display = "inline";
+        textMore.style.display = "inline";
         upArrow.classList.remove('hide');
         downArrow.classList.add('hide');
     }
 
-
 }
 
-function leiaMenos(){
+function readLess(){
     downArrow.classList.remove('hide');
-    maisTexto.style.display = "none";
+    textMore.style.display = "none";
     upArrow.classList.add('hide');
 }
