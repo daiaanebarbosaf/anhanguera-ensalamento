@@ -97,16 +97,20 @@ ScrollReveal({
 function leiaMais(){
     var pontos = document.getElementById("pontos");
     var maisTexto = document.getElementById("plus");
-    var btnLeiaMais =  document.getElementById("btnLeiaMais");
-    var downArrow = document.getElementById("downArrow");
+
+    let downArrow = document.getElementById("downArrow"); 
+    let upArrow = document.getElementById("upArrow");
 
     if(pontos.style.display === "none"){
         downArrow.style.display = "inline";
         maisTexto.style.display = "none";
-        btnLeiaMais.innerHTML = "Leia Mais";
+        upArrow.style.display = "none";
+        
     } else {
         downArrow.style.display = "none";
         maisTexto.style.display = "inline";
-        btnLeiaMais.innerHTML = "Leia Menos";
+        upArrow.style.display = "inline";
     }
+
+
 }
